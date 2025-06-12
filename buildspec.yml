@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Rien à installer pour un site statique..."
+  pre_build:
+    commands:
+      - echo "Rien à prebuild pour un site statique..."    
+  build:
+    commands:
+      - echo "phase de Build du site statique..."
+  post_build:
+    commands:
+      - echo Build completed successfully.
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: .  # Specify where artifacts are stored
